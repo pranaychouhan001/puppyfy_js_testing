@@ -1,0 +1,111 @@
+.wish-item { 
+    padding: 10px;
+    margin-bottom: 10px;
+    background:var(--color-white);
+    border-radius: var(--card-border-radius);
+    height: 100%;
+ }
+ .wish-item .wish-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+ }
+ .wish-item .wish-item-content{
+   width: 100%;
+   overflow-y: scroll;
+   scrollbar-width: none;
+   height: 95%;
+ }
+ .wish-item .wish-header{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+ }
+
+ .wish-item .wish-description{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 1rem;
+
+ }
+ .wish-item .wish-description img{
+    height: 7.5rem;
+    width: 5rem;
+    border-radius: var(--card-border-radius);
+    object-fit: contain;
+ }
+ .wish-item .wish-description .product-details h5{
+    font-size: 12px;
+    margin-top: 10px;
+ }
+
+ .wish-item .wish-description .product-details .wish-items-counter{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    
+ }
+
+ .wish-item .wish-description .product-details .wish-items-counter button{
+  
+   
+   margin-right: 2rem;
+   min-width: 6rem;
+   padding: 0.25rem 0.5rem;
+   
+   background: white;
+   color: rgb(65,98,168);
+   border-radius: 1rem;
+   border: 2px solid rgb(65,98,168);
+   font-weight: bold;
+   cursor: pointer;
+   font-size: 12px;
+ }
+
+ .wish-item .wish-description .product-details .wish-items-counter h5{
+    font-size: 14px;
+ }
+ .wish-item .wish-description .product-details .price-segment{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+ }
+ .wish-item .wish-description .product-details .price-segment h6{
+    margin: 0 0;
+ }
+.delete-wish-item{
+   
+    color: var(--color-danger);
+    opacity: 0.8;
+ }
+ .wish-items-counter h4:hover{
+   cursor: pointer;
+ }
+.offpercentage {
+   color: var(--color-primary);
+}
+
+.wish-item .wish-description .product-details .product-title{
+   font-size: 13px;
+   font-weight: bold;
+   margin-bottom: 4px;
+
+}
+
+
+/* SMALL screens */
+@media only screen and (max-width: 769px){
+
+
+   .delete-wish-item{
+      margin-left: 4rem;
+      color: var(--color-danger);
+      opacity: 0.8;
+   }
+}
+
+

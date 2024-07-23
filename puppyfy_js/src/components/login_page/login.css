@@ -1,0 +1,309 @@
+:root{
+  --color-white: hsl(252,30%,100%);
+    --color-light:hsl(252,30%,93%);
+  --color-gray:hsl(252,15%,60%);
+  --color-primary:hsl(252,75%,60%);
+  --color-secondary:hsl(252,100%,90%);
+  --color-success:hsl(120,95%,60%);
+  --color-danger:hsl(0,95%,60%);
+  --color-dark:hsl(252,30%,15%);
+  --color-black:hsl(252,30%,8%);
+
+
+  --border-radius: 2rem;
+  --card-border-radius: 1rem;
+  --search-padding: .4rem 1rem;
+  --card-padding: 1rem;
+
+
+  --nav-narrow-width: 72px;
+  --nav-medium-width: 244px;
+  --nav-wide-width: 335px;
+}
+body {
+    font-family: sans-serif;
+    background-color: var(--color-light);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /* login.css */
+
+.container-home {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.container-home.fade-out {
+  opacity: 0;
+}
+.forgot-password-home{
+  cursor: pointer;
+}
+
+  
+  .container-home {
+    max-width: 600px;
+    margin: 4rem 0 0 auto; /* Adjusted margin for top, right, bottom, and left */
+    display: flex;
+    justify-content: flex-end; /* Changed to move content to the right */
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+  
+  .videoBackground video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  .box-home {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffff;
+    border: 1px solid #e6e6e6;
+    border-radius: var(--card-border-radius);
+    margin: 0 0 10px;
+    padding: var(--card-padding);
+    flex-grow: 1;
+  }
+  
+  .field1-home {
+    margin: 60px 0px 0px  0;
+    position: relative;
+    font-size: 2px;
+    width: 100%;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  .field2-home {
+    margin: 20px 0;
+    position: relative;
+    font-size: 2px;
+    width: 100%;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+
+  
+  
+  .username-home {
+    font-size: 14px;
+    width: 16rem;
+    height:2rem;
+    outline: none;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    padding-left: 10px;
+  }
+
+  .password-home {
+    font-size: 14px;
+    width: 16rem;
+    height:2rem;
+    outline: none;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    padding-left: 10px;
+  }
+  .login-form-home .form-control{
+    font-size: 14px;
+    line-height: 14px;
+    height: 2rem;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: var(--card-border-radius);
+    }
+
+  .email-home {
+    font-size: 14px;
+    width: 16rem;
+    height:2rem;
+    outline: none;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    padding-left: 10px;
+    
+  }
+
+  .fullname-home {
+    font-size: 14px;
+    width: 16rem;
+    height:2rem;
+    outline: none;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #efefef;
+    padding-left: 10px;
+  }
+
+  
+  
+  /* label intial position*/
+  
+  label {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    padding-bottom: 10px;
+    transform: translateY(7px);
+    line-height:2.5 rem;
+    transition: all ease-out 0.1s;
+    font-size: 14px;
+    color: #999;
+    padding-top: 10px;
+  }
+  
+  /* hiding placeholder in all browsers */
+  
+  /* hiding  placeholder in mozilla */
+  .login-form-home::-moz-placeholder {
+    color: transparent;
+  }
+  
+  /* label final position */
+  input:not(:placeholder-shown) + label {
+    transform: translateY(0);
+    font-size: 11px;
+  }
+  
+  /* input padding increases if placeholder is not shown */
+  input:not(:placeholder-shown) {
+    padding-top: 14px;
+    padding-bottom: 2px;
+  }
+  
+  .login-button-home {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: var(--card-border-radius);
+    background-image: linear-gradient(to right, #1ab6d2,#0e20aa);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+  .login-button-home span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .login-button-home span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .login-button-home:hover span {
+    padding-right: 25px;
+  }
+  
+  .login-button-home:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .separator-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+    margin-top: 6px;
+  }
+  
+  .separator-home .line-home {
+    height: 1px;
+    width: 40%;
+    background-color: #dbdbdb;
+  }
+  
+  .fb-login-btn-home {
+    margin: 1rem;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    color: #385185;
+    font-weight: 600;
+    background: transparent;
+  }
+  
+  
+  .forgot-password-home {
+    font-size: 11px;
+    color: #2658c4;
+  }
+  
+  .signup-home {
+    color: #2658c4;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .puppyfy-home {
+    color: #d01daf;
+  }
+  .logo-home {
+    width:50%;
+    margin-left: 0cm;
+    margin-bottom: -1cm;
+    margin-top: 5px;
+    position:-20px 0;
+    overflow: hidden;
+    align-items: center;
+    cursor: pointer;
+  }
+  .box-home p{
+    margin-top: 2%;
+  }
+
+  .backlogin-home {
+    color: #2658c4;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .videoBackground {
+      display: none; /* Set a different background color or make it transparent */
+    }
+  }
+
+  @media only screen and (min-width: 712px) and (max-width: 1024px) {
+    .videoBackground {
+      display: none; /* Set a different background color or make it transparent */
+    }
+    .container-home{
+      max-width: none;
+      margin-top: 4rem;
+    }
+  }
+
+  

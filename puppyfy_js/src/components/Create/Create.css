@@ -1,0 +1,186 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    background-color: var(--color-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-dark);
+    
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:root{
+    --color-white: hsl(252,30%,100%);
+    --color-light:hsl(252,30%,93%);
+    --color-gray:hsl(252,15%,60%);
+    --color-primary:hsl(252,75%,60%);
+    --color-secondary:hsl(252,100%,90%);
+    --color-success:hsl(120,95%,60%);
+    --color-danger:hsl(0,95%,60%);
+    --color-dark:hsl(252,30%,15%);
+    --color-black:hsl(252,30%,8%);
+
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --search-padding: .4rem 1rem;
+    --card-padding: 1rem;
+
+
+    --nav-narrow-width: 72px;
+    --nav-medium-width: 244px;
+    --nav-wide-width: 335px;
+}
+ 
+main{
+    position: relative;
+    background: var(--color-light);
+}
+
+
+ .main-middle .add-story-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1rem;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    color: var(--color-white);
+    background: linear-gradient(transparent, #222 130%);
+    display: flex;
+    justify-content: center;
+    cursor: pointer; /* Ensure the cursor indicates it's clickable */
+  }
+
+  .custom-marker-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .custom-marker-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .fymap-popup{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fymap-popup p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .fymap-popup button{
+    padding: var(--card-padding);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: var(--card-border-radius);
+    font-size: 12px;
+  } 
+  .help-image img{
+    height: 100%;
+    object-fit: contain;
+  }
+  .feedback-input #image-selection{
+font-size: 10px;
+padding-top: 0.3rem;
+width: 7rem;
+  }
+  .help-content{
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 85%;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
+  .notifications .help-content .notification-content-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+ }
+ .notifications .notification-content-menu .notification-action h4{
+   
+    padding: 0;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+ 
+ }
+ .notifications .help-content .notification-content-menu .info{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex: 3;
+    justify-content: start;
+    align-items: center;
+ }
+ .notifications .help-content .notification-action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex: 1;
+    gap: 0.5rem;
+ 
+ }
+ .notifications .help-content .info .friend-requester-info{
+    font-size: 14px;
+    margin-bottom: 0;
+    
+    }
+    .notifications .help-content .info .friend-requester-info p{
+        margin-bottom: 0;
+    }
+
+  
+
+/* large bscreen */
+  @media only screen and (min-width: 769px){
+ .map-container{
+    height: 80vh;
+
+ }
+}
+
+/* small screen  */
+@media only screen and (max-width: 769px){
+    .map-container{
+       height: 88vh;
+       padding-top: 0.5rem;
+    }
+   }

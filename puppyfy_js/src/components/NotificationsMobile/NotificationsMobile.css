@@ -1,0 +1,90 @@
+
+/* styling the notification  on right */
+.main-middle .notifications{
+    height: 100%;
+    margin-top: -3rem;
+    margin-bottom: 1rem;
+ }
+ .main-middle .notifications .heading{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 3rem;
+    gap: 6rem;
+    color: white;
+ }
+ .main-middle .notifications .heading h4{
+    margin-left: 1.2rem;
+ }
+ 
+ .main-middle .notifications .notification-content{
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    
+    height: 90%;
+ }
+ .main-middle .notifications .notification-content .notification-content-menu{
+   
+    padding: 0.5rem;
+ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+ }
+ .main-middle .notifications .notification-content .notification-action{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex: 1;
+    gap: 0.2rem;
+ 
+ }
+ .main-middle .notifications .notification-content-menu .notification-action img{
+     object-fit: cover;
+     height: 75px;
+     width: 120px;
+     
+ }
+ .main-middle .notifications .notification-content-menu .notification-action .btn{
+    
+    
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+ 
+ }
+ 
+ .main-middle .notifications .notification-content .info .friend-requester-info{
+ font-size: 16px;
+ font-weight: 500;
+ 
+ }
+ .main-middle .notifications .notification-content .notification-content-menu .info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 4;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .main-middle .notifications .notification-content .info p{
+    margin-bottom: 0;
+    line-height: normal;
+    font-weight: 400;
+ }
+
+
+   /* Large screens */
+@media only screen and (min-width: 769px){
+    .main-middle .notifications{
+        display: none;
+    }   
+}

@@ -1,0 +1,84 @@
+
+/* styling the notification  on right */
+.main-right .messages{
+    height: 100%;
+ }
+ .main-right .messages .heading{
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 2rem;
+    border-top-right-radius: var(--card-border-radius);
+    border-top-left-radius: var(--card-border-radius);
+    color: white;
+    gap: 4rem;
+ }
+ .main-right .messages .heading h5{
+   margin-left: 1rem;
+   font-size: 16px;
+   margin-bottom: 0;
+ }
+
+
+ .main-right .messages .messages-content{
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    height: 93%;
+ }
+ .main-right .messages .messages-content .messages-content-menu{
+   
+    padding: 0.5rem;
+    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+ }
+ .main-right .messages .messages-content .info:hover{
+    cursor: pointer;
+ }
+
+ .main-right .messages .messages-content .info .messages-info{
+
+ display: flex;
+ flex-direction: row;
+ gap: 2rem;
+ flex: 4;
+ }
+ 
+
+
+ .main-right .messages .messages-content .messages-content-menu .info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .main-right .messages .messages-content .info .messages-info p{
+    margin-bottom: 0;
+    line-height: normal;
+    font-size:12px;
+ }
+ .main-right .messages .messages-content .info .messages-info .message-text{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+ }
+ .msg-time{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .main-right .messages .messages-content .info .messages-info h6{
+    font-size: 14px;
+    margin-bottom: 0;
+ }
+
+
+

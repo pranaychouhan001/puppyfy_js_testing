@@ -1,0 +1,105 @@
+
+/* styling the notification  on right */
+ .suggestions{
+    height: 100%;
+ }
+ .suggestions .heading{
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    border-top-right-radius: var(--card-border-radius);
+    border-top-left-radius: var(--card-border-radius);
+    color: white;
+    gap: 3rem;
+ }
+ .suggestions .heading h5{
+    font-size: 16px;
+    margin: 0;
+ }
+
+ .back-to-feedback:hover{
+ cursor: pointer;
+ }
+ .main-right .suggestions .notification-content{
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    
+    height: 93%;
+ }
+ .main-right .suggestions .notification-content .notification-content-menu{
+   
+    padding: 0.5rem;
+ 
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+ }
+ .main-right .suggestions .notification-content .notification-action{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    flex: 2;
+    gap: 1rem;
+ 
+ }
+ .main-right .suggestions .notification-content .notification-action p{
+   font-size: 12px;
+   color:var(--color-primary);
+   align-items: center;
+   margin: 0;
+   font-weight: 500;
+ }
+ .main-right .suggestions .notification-content .notification-action p:hover{
+   
+    color: black;
+    cursor: pointer;
+
+  }
+  .main-right .suggestions .notification-content .notification-action h5{
+   color: var(--color-gray);
+  }
+  .main-right .suggestions .notification-content .notification-action h5:hover{
+   color:var(--color-danger);
+   cursor: pointer;
+  }
+
+ 
+
+ 
+ .main-right .suggestions .notification-content .info .friend-requester-info{
+ font-size: 14px;
+ font-weight: 500;
+ display: flex;
+ flex-direction: column;
+ gap: 0.25rem;
+ }
+ .main-right .suggestions .notification-content .notification-content-menu .info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex: 4;
+    justify-content: flex-start;
+    align-items: center;
+ }
+ .main-right .suggestions .notification-content .info p{
+    margin-bottom: 0;
+    line-height: normal;
+    font-weight: 400;
+ }
+ .main-right .suggestions .notification-content .notification-content-menu .info .profile-picture img{
+    border: 2px solid var(--color-light);
+ }
+
+ .notification-action .btn-request{
+   font-size: 12px;
+   background-color: var(--color-primary);
+   color: white;
+   border: hidden;
+ }
